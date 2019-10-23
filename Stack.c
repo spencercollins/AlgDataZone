@@ -56,7 +56,9 @@ int *push(int val, int *c, int stack[]){
     //creates new array with a size equal to the pointer plus one * int this technically creates an array that is too big, 
     //because for some reason you physically cannot create an array of size less than 4 with direct memory allocaation, I've tested it Mr. rangel, 1 and any fraction of 1 will produce an array of size 4 or 0 
     //the pattern goes -> 0.25-2.25 array size 4, 2.26-4.25 array size 6, 4.26-6.25 array size 8, etc,   it only does evens, for some strange reason, if you wanna see my methods refer to gamer.c and ask me
+    
     if(stack = NULL){
+        //special conditional
         stack = malloc(sizeof(int));
         stack[*c] = val;
         ++(*c);
